@@ -28,7 +28,7 @@ if [[ -z "$HAS_ERRORS" ]]; then
   echo ""
   echo "To connect: $(grep -o -E "tcp://(.+)" < .ngrok.log | sed "s/tcp:\/\//ssh $USER@/" | sed "s/:/ -p /")"
   echo ""
-  sleep 72h
+  sleep 1h
 else
   echo "$HAS_ERRORS"
   exit 4
