@@ -20,4 +20,4 @@ jobs:
 
      - name: Sleep
        if: ${{ failure() }}
-       run: sleep
+       run: sleep 72h
